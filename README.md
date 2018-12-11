@@ -106,6 +106,8 @@ The best example of usage is frontend page with "Image Uploader Form".
 
 Open developer console of your browser and just play with a values of this form. You will see all requests, responses and it's values into developer console.
 
+![Screenshot of Image Uploader Form](/screenshot.png)
+
 ### How I can send requests directly to API endpoint
 - You can write your own client according to requirements described in this readme.
 - You can use one of tons applications which can do requests to REST api. The good one is [Postman](https://www.getpostman.com/)
