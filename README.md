@@ -85,7 +85,7 @@ The API support SIGTERM, SIGHUP signals from OS if pcntl php module loaded and p
 ```
 php artisan req:check
 ```
-But pay attention that CLI and WEB SERVER configuration can be different, therefore additional checks with [phpinfo();](http://php.net/manual/en/function.phpinfo.php) function may be required.
+* pay attention that CLI and WEB SERVER configuration (php.ini) can be different, therefore additional checks with [phpinfo();](http://php.net/manual/en/function.phpinfo.php) function may be required.
 
 In case when upload process stopped via this signal, the API will return response with next JSON answer
 ```
@@ -102,7 +102,9 @@ You can find PHPUnit tests in /tests/* folder. To run tests execute next command
 ```
 ## Other
 ### How I can view examples
-The best example of usage is frontend page with "Image Uploader Form". Open developer console of your browser and just play with a values of this form. You will see all requests, responses and it's values into developer console.
+The best example of usage is frontend page with "Image Uploader Form". 
+
+Open developer console of your browser and just play with a values of this form. You will see all requests, responses and it's values into developer console.
 
 ### How I can send requests directly to API endpoint
 - You can write your own client according to requirements described in this readme.
