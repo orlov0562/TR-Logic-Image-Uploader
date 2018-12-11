@@ -89,12 +89,10 @@ But pay attention that CLI and WEB SERVER configuration can be different, theref
 
 In case when upload process stopped via this signal, the API will return response with next JSON answer
 ```
-```
 {
     code: 503
     message: Service unavailable try to repeat your request later
 }
-```
 ```
 
 ## Tests
