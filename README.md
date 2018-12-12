@@ -100,11 +100,18 @@ You can find PHPUnit tests in /tests/* folder. To run tests execute next command
 ```
 ./vendor/bin/phpunit
 ```
+## Files with key logic
+- [/app/Http/Controllers/ApiController.php](https://github.com/orlov0562/TR-Logic-Image-Uploader/blob/master/app/Http/Controllers/ApiController.php)
+- [/app/Models/RequestImageReader.php](https://github.com/orlov0562/TR-Logic-Image-Uploader/blob/master/app/Models/RequestImageReader.php)
+- [/app/Models/ImageStorage.php](https://github.com/orlov0562/TR-Logic-Image-Uploader/blob/master/app/Models/ImageStorage.php)
+
 ## Other
 ### How I can view examples
 The best example of usage is frontend page with "Image Uploader Form". 
 
 Open developer console of your browser and just play with a values of this form. You will see all requests, responses and it's values into developer console.
+
+![Screenshot of Image Uploader Form](/screenshot.png)
 
 ### How I can send requests directly to API endpoint
 - You can write your own client according to requirements described in this readme.
