@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.org/orlov0562/TR-Logic-Image-Uploader.svg?branch=master)](https://travis-ci.org/orlov0562/TR-Logic-Image-Uploader)
 
-# TR-Logic-Image-Uploader
+# Image Uploader
 Image Uploader for TR Logic LLC
 
 ## Requirements
