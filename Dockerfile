@@ -79,7 +79,7 @@ RUN /opt/web/app/vendor/bin/phpunit /opt/web/app/tests
 # CONFIGURE APP ENVIRONMENT
 # ==================================
 
-RUN echo "APP_DEBUG = true\n" > /opt/web/app/.env
+# RUN echo "APP_DEBUG = true\n" > /opt/web/app/.env
 
 # ==================================
 # CLEAN UP
