@@ -46,9 +46,5 @@ tests/_support/_generated
 # local env file
 .env
 
-# local bash scripts
-server-up.sh
-phpunit
-
 # public bower folder
 /public/vendor/*
