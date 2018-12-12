@@ -30,6 +30,19 @@ php -S localhost:8000 -t public
 
 If everything OK you will get test frontend with "Image Upload Form"
 
+## Run with Docker without installation
+- Download [Dockerfile](https://raw.githubusercontent.com/orlov0562/TR-Logic-Image-Uploader/master/Dockerfile) and [docker-compose.yml](https://raw.githubusercontent.com/orlov0562/TR-Logic-Image-Uploader/master/docker-compose.yml) files
+- Run `docker-compose up` command (pay attention that it can take some time to prepare docker image on first run)
+- Open your browser and visit http://localhost:8000
+
+If you on Linux and have already installed `wget`, `docker` and `docker-compose` you can use this all-in-one command
+```
+wget -O Dockerfile https://raw.githubusercontent.com/orlov0562/TR-Logic-Image-Uploader/master/Dockerfile \
+&& wget -O docker-compose.yml https://raw.githubusercontent.com/orlov0562/TR-Logic-Image-Uploader/master/docker-compose.yml \
+&& docker-compose up
+```
+
+
 ## REST API
 ### /api/upload endpoint
 #### JSON POST requests
@@ -49,9 +62,9 @@ var postData = JSON.stringify(images);
 ```
 #### POST requests
 
-You can send POST request encoded with "application/x-www-form-urlencoded" or "multipart/form-data" if you want to send files.
+You can send POST request encoded with `application/x-www-form-urlencoded` or `multipart/form-data` if you want to send files.
 
-Expected format of data: one or multiple inputs with name "imageFile[]" that contains one of the following value: FILE, URL or DATA URI.
+Expected format of data: one or multiple inputs with name `imageFile[]` that contains one of the following value: FILE, URL or DATA URI.
 
 #### RESPONSE
 In case when you sent wrong request, for example with not existing url or not image MIME, you will get a JSON answer in next formay
@@ -81,7 +94,7 @@ In case if upload was succefull you will get next answer
 ```
 
 ## OS signals
-The API support SIGTERM, SIGHUP signals from OS if pcntl php module loaded and pcntl_async_signals, pcntl_signal functions enabled. You can check this requirements with cli command
+The API support `SIGTERM`, `SIGHUP` signals from OS if pcntl php module loaded and `pcntl_async_signals`, `pcntl_signal` functions enabled. You can check this requirements with cli command
 ```
 php artisan req:check
 ```
@@ -96,7 +109,7 @@ In case when upload process stopped via this signal, the API will return respons
 ```
 
 ## Tests
-You can find PHPUnit tests in /tests/* folder. To run tests execute next command from the project dir
+You can find PHPUnit tests in `/tests/*` folder. To run tests execute next command from the project dir
 ```
 ./vendor/bin/phpunit
 ```
