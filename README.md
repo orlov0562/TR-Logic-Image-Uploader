@@ -30,7 +30,7 @@ php -S localhost:8000 -t public
 ```
 5. Open your browser and visit http://localhost:8000
 
-If everything OK you will get test frontend with "Image Upload Form"
+If everything OK you will get test frontend with "Image Uploader" form
 
 ## Run with Docker
 - Download [Dockerfile](https://raw.githubusercontent.com/orlov0562/TR-Logic-Image-Uploader/master/Dockerfile) and [docker-compose.yml](https://raw.githubusercontent.com/orlov0562/TR-Logic-Image-Uploader/master/docker-compose.yml) files
@@ -123,7 +123,7 @@ You can find PHPUnit tests in `/tests/*` folder. To run tests execute next comma
 
 ## Other
 ### How I can view examples
-The best example of usage is frontend page with "Image Uploader Form". 
+The best example of usage is frontend page with "Image Uploader" form. 
 
 Open developer console of your browser and just play with a values of this form. You will see all requests, responses and it's values into developer console.
 
