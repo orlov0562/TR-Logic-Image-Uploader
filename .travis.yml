@@ -1,0 +1,23 @@
+sudo: false
+
+language: php
+
+php:
+ - 7.2
+
+cache:
+ directories:
+  - $HOME/.composer/cache/files
+
+install:
+ - composer self-update
+ - composer install
+
+script: $COMPOSER_BIN_DIR/phpunit
+
+notifications:
+ email:
+  recipients:
+   - orlov0562@gmail.com
+  on_success: never
+  on_failure: always
