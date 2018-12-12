@@ -13,7 +13,7 @@ install:
  - composer self-update
  - composer install
 
-script: $COMPOSER_BIN_DIR/phpunit
+script: vendor/bin/phpunit
 
 notifications:
  email:
