@@ -43,7 +43,7 @@ If everything OK you will get test frontend with "Image Uploader" form
 
 ### Installation
 - Download [Dockerfile](https://raw.githubusercontent.com/orlov0562/TR-Logic-Image-Uploader/master/Dockerfile) and [docker-compose.yml](https://raw.githubusercontent.com/orlov0562/TR-Logic-Image-Uploader/master/docker-compose.yml) files
-- Run `docker-compose up` command (pay attention that it can take some time to prepare docker image on first run)
+- Run `docker-compose up` command (keep in mind that it can take some time to prepare docker image on first run)
 - Open your browser and visit http://localhost:8000
 
 If you on Linux and have already installed `wget`, `docker` and `docker-compose` you can use this all-in-one command
