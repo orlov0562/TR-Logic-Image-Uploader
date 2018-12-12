@@ -48,3 +48,6 @@ tests/_support/_generated
 
 # public bower folder
 /public/vendor/*
+
+# developer folder
+/dev/*
