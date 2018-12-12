@@ -44,6 +44,7 @@ wget -O Dockerfile https://raw.githubusercontent.com/orlov0562/TR-Logic-Image-Up
 && docker-compose up
 ```
 
+Pay attention that you no need to download anything else. The project source code and dependencies will be downloaded into docker image automatically while building.
 
 ## REST API
 ### /api/upload endpoint
