@@ -3,10 +3,12 @@
 # Image Uploader
 Image Uploader for TR Logic LLC
 
+
 ## Requirements
 - PHP 7.1.3+ with GD module
 - Composer 1.5.2+
 - Bower 1.8.4+
+
 
 ## Installation
 
@@ -32,7 +34,14 @@ php -S localhost:8000 -t public
 
 If everything OK you will get test frontend with "Image Uploader" form
 
+
 ## Run with Docker
+
+### Requirements
+- [Doker](https://www.docker.com/)
+- [Doker Compose](https://docs.docker.com/compose/)
+
+### Installation
 - Download [Dockerfile](https://raw.githubusercontent.com/orlov0562/TR-Logic-Image-Uploader/master/Dockerfile) and [docker-compose.yml](https://raw.githubusercontent.com/orlov0562/TR-Logic-Image-Uploader/master/docker-compose.yml) files
 - Run `docker-compose up` command (pay attention that it can take some time to prepare docker image on first run)
 - Open your browser and visit http://localhost:8000
