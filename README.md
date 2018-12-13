@@ -26,7 +26,7 @@ composer install
 ```
 bower install
 ```
-4. Preapre storage folder and create symlinks
+4. Preapre storage folder and create public symlink
 ```
 mkdir -p /opt/web/app/storage/app/public
 ln -s /opt/web/app/storage/app/public /opt/web/app/public/storage
