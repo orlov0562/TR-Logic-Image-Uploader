@@ -26,11 +26,16 @@ composer install
 ```
 bower install
 ```
-4. Run local web server with PHP
+4. Preapre storage folder and create symlinks
+```
+mkdir -p /opt/web/app/storage/app/public
+ln -s /opt/web/app/storage/app/public /opt/web/app/public/storage
+```
+5. Run local web server with PHP
 ```
 php -S localhost:8000 -t public
 ```
-5. Open your browser and visit http://localhost:8000
+6. Open your browser and visit http://localhost:8000
 
 If everything OK you will get test frontend with "Image Uploader" form
 
