@@ -38,7 +38,7 @@ php -S localhost:8000 -t public
 
 If everything OK you will get test frontend with "Image Uploader" form
 
-Bellow all-one-command
+Bellow all-in-one command
 ```
 mkdir image-uploader && cd image-uploader \
 && git clone https://github.com/orlov0562/TR-Logic-Image-Uploader.git . \
