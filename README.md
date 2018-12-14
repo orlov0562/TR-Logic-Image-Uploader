@@ -3,10 +3,12 @@
 # Image Uploader
 Image Uploader for TR Logic LLC
 
+
 ## Requirements
 - PHP 7.1.3+ with GD module
 - Composer 1.5.2+
 - Bower 1.8.4+
+
 
 ## Installation
 
@@ -24,17 +26,29 @@ composer install
 ```
 bower install
 ```
-4. Run local web server with PHP
+4. Preapre storage folder and create public symlink
+```
+mkdir -p /opt/web/app/storage/app/public
+ln -s /opt/web/app/storage/app/public /opt/web/app/public/storage
+```
+5. Run local web server with PHP
 ```
 php -S localhost:8000 -t public
 ```
-5. Open your browser and visit http://localhost:8000
+6. Open your browser and visit http://localhost:8000
 
-If everything OK you will get test frontend with "Image Upload Form"
+If everything OK you will get test frontend with "Image Uploader" form
 
-## Run with Docker without installation
+
+## Run with Docker
+
+### Requirements
+- [Doker](https://www.docker.com/)
+- [Doker Compose](https://docs.docker.com/compose/)
+
+### Installation
 - Download [Dockerfile](https://raw.githubusercontent.com/orlov0562/TR-Logic-Image-Uploader/master/Dockerfile) and [docker-compose.yml](https://raw.githubusercontent.com/orlov0562/TR-Logic-Image-Uploader/master/docker-compose.yml) files
-- Run `docker-compose up` command (pay attention that it can take some time to prepare docker image on first run)
+- Run `docker-compose up` command (keep in mind that it can take some time to prepare docker image on first run)
 - Open your browser and visit http://localhost:8000
 
 If you on Linux and have already installed `wget`, `docker` and `docker-compose` you can use this all-in-one command
@@ -44,6 +58,7 @@ wget -O Dockerfile https://raw.githubusercontent.com/orlov0562/TR-Logic-Image-Up
 && docker-compose up
 ```
 
+Pay attention that you no need to download anything else. The project source code and dependencies will be downloaded into docker image automatically while building.
 
 ## REST API
 ### /api/upload endpoint
@@ -122,7 +137,7 @@ You can find PHPUnit tests in `/tests/*` folder. To run tests execute next comma
 
 ## Other
 ### How I can view examples
-The best example of usage is frontend page with "Image Uploader Form". 
+The best example of usage is frontend page with "Image Uploader" form. 
 
 Open developer console of your browser and just play with a values of this form. You will see all requests, responses and it's values into developer console.
 
