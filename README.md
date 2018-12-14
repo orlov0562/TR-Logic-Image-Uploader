@@ -140,6 +140,12 @@ You can find PHPUnit tests in `/tests/*` folder. To run tests execute next comma
 ```
 ./vendor/bin/phpunit
 ```
+
+Test results of last commit made with Travis CI
+
+[![Build Status](https://travis-ci.org/orlov0562/TR-Logic-Image-Uploader.svg?branch=master)](https://travis-ci.org/orlov0562/TR-Logic-Image-Uploader)
+
+
 ## Files with key logic
 - [/app/Http/Controllers/ApiController.php](https://github.com/orlov0562/TR-Logic-Image-Uploader/blob/master/app/Http/Controllers/ApiController.php)
 - [/app/Models/RequestImageReader.php](https://github.com/orlov0562/TR-Logic-Image-Uploader/blob/master/app/Models/RequestImageReader.php)
