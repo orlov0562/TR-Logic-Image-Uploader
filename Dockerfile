@@ -66,7 +66,6 @@ RUN cd /opt/web/app && bower --allow-root install
 # ==================================
 
 RUN mkdir -p /opt/web/app/storage/app/public
-RUN rm -rf /opt/web/app/public/storage
 RUN ln -s /opt/web/app/storage/app/public /opt/web/app/public/storage
 
 # ==================================

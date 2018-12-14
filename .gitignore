@@ -40,7 +40,8 @@ tests/_support/_generated
 /storage/framework/views/*
 /storage/logs/*
 
-# public storage link
+# public storage
+/public/storage
 /public/storage/*
 
 # local env file
