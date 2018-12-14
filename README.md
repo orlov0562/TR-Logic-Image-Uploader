@@ -14,8 +14,7 @@ Image Uploader for TR Logic LLC
 
 1. Create project directory and download repository files
 ```
-mkdir image-uploader
-cd image-uploader
+mkdir image-uploader && cd image-uploader
 git clone https://github.com/orlov0562/TR-Logic-Image-Uploader.git .
 ```
 2. Install dependencies via Composer
@@ -28,8 +27,8 @@ bower install
 ```
 4. Preapre storage folder and create public symlink
 ```
-mkdir -p /opt/web/app/storage/app/public
-ln -s /opt/web/app/storage/app/public /opt/web/app/public/storage
+mkdir -p storage/app/public
+ln -s ../storage/app/public public/storage
 ```
 5. Run local web server with PHP
 ```
@@ -38,6 +37,17 @@ php -S localhost:8000 -t public
 6. Open your browser and visit http://localhost:8000
 
 If everything OK you will get test frontend with "Image Uploader" form
+
+Bellow all-one-command
+```
+mkdir image-uploader && cd image-uploader \
+&& git clone https://github.com/orlov0562/TR-Logic-Image-Uploader.git . \
+&& composer install \
+&& bower install \
+&& mkdir -p storage/app/public \
+&& ln -s ../storage/app/public public/storage \
+&& php -S localhost:8000 -t public
+```
 
 
 ## Run with Docker
