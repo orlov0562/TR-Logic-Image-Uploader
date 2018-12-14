@@ -141,7 +141,7 @@ You can find PHPUnit tests in `/tests/*` folder. To run tests execute next comma
 ./vendor/bin/phpunit
 ```
 
-Test results of last commit made with Travis CI
+You can view on the badge bellow test results of the last commit made with Travis CI
 
 [![Build Status](https://travis-ci.org/orlov0562/TR-Logic-Image-Uploader.svg?branch=master)](https://travis-ci.org/orlov0562/TR-Logic-Image-Uploader)
 
